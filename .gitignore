@@ -70,6 +70,11 @@ Carthage/Build/
 Dependencies/
 .accio/
 
+# Examples
+Examples/Demo/Pods/
+Examples/Demo/xcuserdata/
+Examples/Demo/*.xcworkspace
+
 # fastlane
 #
 # It is recommended to not store the screenshots in the git repo.

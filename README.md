@@ -1,19 +1,25 @@
 # MarkdownUI
+
 [![CI](https://github.com/gonzalezreal/MarkdownUI/workflows/CI/badge.svg)](https://github.com/gonzalezreal/MarkdownUI/actions?query=workflow%3ACI)
 [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fgonzalezreal%2Fswift-markdown-ui%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/gonzalezreal/swift-markdown-ui)
 [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fgonzalezreal%2Fswift-markdown-ui%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/gonzalezreal/swift-markdown-ui)
 
 Display and customize Markdown text in SwiftUI.
 
-* [Overview](#overview)
-* [Minimum requirements](#minimum-requirements)
-* [Getting started](#getting-started)
-  * [Creating a Markdown view](#creating-a-markdown-view)
-  * [Styling Markdown](#styling-markdown)
-* [Documentation](#documentation)
-  * [Related content](#related-content)
-* [Demo](#demo)
-* [Installation](#installation)
+- [MarkdownUI](#markdownui)
+  - [Overview](#overview)
+  - [Minimum requirements](#minimum-requirements)
+  - [Getting started](#getting-started)
+    - [Creating a Markdown view](#creating-a-markdown-view)
+    - [Styling Markdown](#styling-markdown)
+  - [Documentation](#documentation)
+    - [Related content](#related-content)
+  - [Demo](#demo)
+  - [Installation](#installation)
+    - [Adding MarkdownUI to a Swift package](#adding-markdownui-to-a-swift-package)
+      - [Cocoapods](#cocoapods)
+      - [Carthage](#carthage)
+    - [Adding MarkdownUI to an Xcode project](#adding-markdownui-to-an-xcode-project)
 
 ## Overview
 
@@ -264,6 +270,7 @@ MarkdownUI comes with a few more tricks on the sleeve. You can explore the
 ![](Examples/Demo/Screenshot~dark.png#gh-dark-mode-only)
 
 ## Installation
+
 ### Adding MarkdownUI to a Swift package
 
 To use MarkdownUI in a Swift Package Manager project, add the following line to the dependencies in your `Package.swift` file:
@@ -282,9 +289,22 @@ Include `"MarkdownUI"` as a dependency for your executable target:
 
 Finally, add `import MarkdownUI` to your source code.
 
+#### Cocoapods
+
+```
+pod 'cmark_gfm', :git => 'https://github.com/ghostcrying/swift-cmark.git', :tag => '0.0.4'
+pod 'MarkdownUI', :git => 'https://github.com/hntrl/swift-markdown-ui.git', :tag => '0.0.1'
+```
+
+#### Carthage
+
+```
+git "https://github.com/gonzalezreal/swift-markdown-ui.git" "main"
+```
+
 ### Adding MarkdownUI to an Xcode project
 
 1. From the **File** menu, select **Add Packages…**
 1. Enter `https://github.com/gonzalezreal/swift-markdown-ui` into the
-   *Search or Enter Package URL* search field
+   _Search or Enter Package URL_ search field
 1. Link **MarkdownUI** to your application target
